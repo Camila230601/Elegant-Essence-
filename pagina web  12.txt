@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa para Chicas</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #ffe4e1; color: #333; }
+        .producto { margin: 20px; padding: 10px; border: 1px solid #ccc; display: inline-block; background-color: #fff0f5; }
+        .producto img { width: 150px; height: auto; display: block; margin: 0 auto 10px; }
+        button { background-color: #ff69b4; color: white; border: none; padding: 10px; cursor: pointer; }
+        button:hover { background-color: #ff1493; }
+        form { margin-top: 20px; }
+        .logo { width: 150px; height: auto; margin-bottom: 20px; }
+    </style>
+    <script>
+        function agregarAlCarrito() {
+            alert("Producto añadido al carrito");
+        }
+        function enviarFormulario(event) {
+            event.preventDefault();
+            alert("Formulario enviado");
+        }
+    </script>
+</head>
+<body>
+    <img src="logo.png" alt="Logo de la tienda" class="logo">
+    <h1>Bienvenida a nuestra Tienda de Ropa para Chicas</h1>
+    
+    <div class="producto">
+        <img src="vestido.jpg" alt="Vestido Floral">
+        <h3>Vestido Floral</h3>
+        <p>$60.000</p>
+        <button onclick="agregarAlCarrito()">Añadir al Carrito</button>
+    </div>
+    
+    <div class="producto">
+        <img src="blusa.jpg" alt="Blusa Rosa">
+        <h3>Blusa Rosa</h3>
+        <p>$35.000</p>
+        <button onclick="agregarAlCarrito()">Añadir al Carrito</button>
+    </div>
+    
+    <div class="producto">
+        <img src="shorts.jpg" alt="Shorts de Jean">
+        <h3>Shorts de Jean</h3>
+        <p>$45.000</p>
+        <button onclick="agregarAlCarrito()">Añadir al Carrito</button>
+    </div>
+    
+    <div class="producto">
+        <img src="falda.jpg" alt="Falda Plisada">
+        <h3>Falda Plisada</h3>
+        <p>$50.000</p>
+        <button onclick="agregarAlCarrito()">Añadir al Carrito</button>
+    </div>
+    
+    <div class="producto">
+        <img src="top.jpg" alt="Top Blanco">
+        <h3>Top Blanco</h3>
+        <p>$30.000</p>
+        <button onclick="agregarAlCarrito()">Añadir al Carrito</button>
+    </div>
+    
+    <div class="producto">
+        <img src="pantalon.jpg" alt="Pantalón Beige">
+        <h3>Pantalón Beige</h3>
+        <p>$55.000</p>
+        <button onclick="agregarAlCarrito()">Añadir al Carrito</button>
+    </div>
+    
+    <h2>Suscríbete para recibir ofertas</h2>
+    <form onsubmit="enviarFormulario(event)">
+        <input type="email" placeholder="Tu correo" required>
+        <button type="submit">Suscribirse</button>
+    </form>
+    
+    <h2>Contáctanos</h2>
+    <form onsubmit="enviarFormulario(event)">
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo" required>
+        <textarea placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <h2>Solicita Asesoría de Moda</h2>
+    <form onsubmit="enviarFormulario(event)">
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo" required>
+        <select required>
+            <option value="">Selecciona tu estilo preferido</option>
+            <option value="casual">Casual</option>
+            <option value="elegante">Elegante</option>
+            <option value="urbano">Urbano</option>
+        </select>
+        <button type="submit">Solicitar</button>
+    </form>
+</body>
+</html>
